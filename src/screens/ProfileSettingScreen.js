@@ -55,8 +55,7 @@ const ProfileSettingScreen = () => {
                         backgroundColor: "#F6F6F6",
                         borderRadius: 50
                     }
-                }
-                    onPress={() => navigation.navigate("ProfileSetting")}><Entypo name="user" size={30} color="#CDCDCD" /></Pressable>
+                }><Entypo name="user" size={30} color="#CDCDCD" /></Pressable>
             </View>
             <View style={
                 {
