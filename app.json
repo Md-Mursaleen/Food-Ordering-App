@@ -1,15 +1,18 @@
 {
   "expo": {
-    "name": "uber-eats-user-app",
+    "name": "Uber Eats",
     "slug": "uber-eats-user-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#06C167"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -25,8 +28,9 @@
       "package": "com.ubereats",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#ffffff"
       },
+      "googleServicesFile": "./google-services.json",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyCRS2Fd5YGlj60ryL2MfrGbKR393XC5cVw"
@@ -35,6 +39,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c33ad6a6-2c8d-4174-beac-b7e569be2162"
+      }
     }
   }
 }

@@ -26,6 +26,7 @@ const OrderCompletedScreen = ({ route }) => {
                 <Text style={
                     {
                         marginLeft: 15,
+                        marginRight: 3,
                         fontSize: 22,
                         fontWeight: "500",
                         lineHeight: 28

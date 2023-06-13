@@ -422,7 +422,7 @@ function HomeScreen() {
     const [cities2, setCities2] = useState("Tucson");
     const [resturantData1, setResturantData1] = useState([]);
     const [resturantData2, setResturantData2] = useState([]);
-    const [homeresturant, setHomeresturant] = useState(groceries[0])
+    const [homeresturant, setHomeresturant] = useState(groceries[0]);
 
     const getResturantsFromYelp = (setResturantData, cities) => {
         const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${cities}`;
@@ -523,7 +523,7 @@ function HomeScreen() {
                         borderTopWidth: 8
                     }
                 }>
-                    <ResturantDetails cities="Minneapolis" discount={false} />
+                    <ResturantDetails cities="Savannah" discount={false} />
                 </View>
                 <View style={
                     {

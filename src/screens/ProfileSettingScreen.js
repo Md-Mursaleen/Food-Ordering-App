@@ -1,18 +1,13 @@
 import { View, Text, Pressable } from "react-native";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Feather from "react-native-vector-icons/Feather";
 import Entypo from "react-native-vector-icons/Entypo";
-import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Octicons from "react-native-vector-icons/Octicons";
 import { useNavigation } from "@react-navigation/native";
-import { Auth } from "aws-amplify";
 
 const ProfileSettingScreen = () => {
-    const [username, setUsername] = useState("");
     const navigation = useNavigation();
-    useEffect(() => {
-        Auth.currentAuthenticatedUser().then((res) => setUsername(res.attributes.name));
-    }, []);
     return (
         <View style={
             {
@@ -67,7 +62,7 @@ const ProfileSettingScreen = () => {
                         fontSize: 18,
                         textAlign: "center"
                     }
-                }>{username}</Text>
+                }>Md Mursaleen</Text>
                 <Text style={
                     {
                         marginTop: 10,
@@ -80,7 +75,7 @@ const ProfileSettingScreen = () => {
             </View>
             <View style={
                 {
-                    marginLeft: 15,
+                    marginHorizontal: 15,
                     marginTop: 30,
                     borderTopColor: "#F4F4F4",
                     borderTopWidth: 1
@@ -104,7 +99,7 @@ const ProfileSettingScreen = () => {
                         }
                     }>
                         <View>
-                            <SimpleLineIcons name="home" size={20} />
+                            <Octicons name="home" size={21} />
                         </View>
                         <View style={
                             {

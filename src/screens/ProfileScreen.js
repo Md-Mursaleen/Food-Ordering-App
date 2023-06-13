@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 import ProfileDetails from "../components/ProfileDetails";
 import BottomTabs from "../components/BottomTabs";
 import { useNavigation } from "@react-navigation/native";
-import { Auth } from "aws-amplify";
 
 function ProfileScreen() {
-    const [username, setUsername] = useState("");
     const navigation = useNavigation();
-    useEffect(() => {
-        Auth.currentAuthenticatedUser().then((res) => setUsername(res.attributes.name));
-    }, []);
     return (
         <View style={
             {
@@ -33,7 +28,7 @@ function ProfileScreen() {
                         fontWeight: "600"
                     }
                 }>
-                    {username}
+                    Md Mursaleen
                 </Text>
                 <View style={
                     {

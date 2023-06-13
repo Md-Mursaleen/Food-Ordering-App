@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ScrollView, Text, View, Image, Pressable, StyleSheet } from "react-native";
 import Feather from "react-native-vector-icons/Feather";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Octicons from "react-native-vector-icons/Octicons";
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -18,6 +17,9 @@ function CheckoutScreen({ route }) {
     const extradeliveryFee = isfasterBlack ? 2.99 : 0;
     const { item, getTotal, dessertPrice } = route.params;
     const [subTotal, setSubTotal] = useState(getTotal);
+    function truncate(string, n) {
+        return string?.length > n ? string.substr(0, n - 1) + ".." : string;
+    }
     return (
         <>
             <ScrollView showsVerticalScrollIndicator={false} style={
@@ -286,7 +288,7 @@ function CheckoutScreen({ route }) {
                                             fontSize: 16,
                                             fontWeight: "500"
                                         }
-                                    }>({item.resturantAddress})</Text>
+                                    }>({truncate(item.resturantAddress, 14)})</Text>
                                 </View>
                                 <Text style={
                                     {

@@ -30,7 +30,7 @@ const items = [
         title: "pizza"
     },
     {
-        image: require("../../assets/categoriesiamges/sandwich.png"),
+        image: require("../../assets/categoriesimages/sandwich.png"),
         text: "Sandwich",
         title: "sandwich"
     },
@@ -40,22 +40,22 @@ const items = [
         title: "burger"
     },
     {
-        image: require("../../assets/categoriesiamges/sushi.png"),
+        image: require("../../assets/categoriesimages/sushi.png"),
         text: "Sushi",
         title: "sushi"
     },
     {
-        image: require("../../assets/categoriesiamges/roll.png"),
+        image: require("../../assets/categoriesimages/roll.png"),
         text: "Rolls",
         title: "roll"
     },
     {
-        image: require("../../assets/categoriesiamges/juice.png"),
+        image: require("../../assets/categoriesimages/juice.png"),
         text: "Juices",
         title: "juice"
     },
     {
-        image: require("../../assets/categoriesiamges/soup.png"),
+        image: require("../../assets/categoriesimages/soup.png"),
         text: "Soup",
         title: "soup"
     }

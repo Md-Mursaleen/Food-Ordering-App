@@ -39,7 +39,7 @@ const AllResturantsScreen = () => {
                     marginLeft: 12
                 }
             }>
-                <AllResturantsDetails cities="Fresno" discount={false} />
+                <AllResturantsDetails cities="Bakersfield" discount={false} />
                 <AllResturantsDetails cities="New York" discount={false} />
                 <AllResturantsDetails cities="Omaha" discount={false} />
                 <AllResturantsDetails cities="Atlanta" discount={false} />

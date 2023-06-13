@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StatusBar, Image, StyleSheet } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import Feather from "react-native-vector-icons/Feather";
 import firebase from "../../firebase";

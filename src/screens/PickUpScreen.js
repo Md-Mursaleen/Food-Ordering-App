@@ -49,42 +49,42 @@ function PickUpScreen() {
     }, []);
     const items = [
         {
-            image: require("../../assets/categoriesiamges/italian.png"),
+            image: require("../../assets/categoriesimages/italian.png"),
             text: "Italian",
             title: "italian"
         },
         {
-            image: require("../../assets/categoriesiamges/pizza.png"),
+            image: require("../../assets/categoriesimages/pizza.png"),
             text: "Pizza",
             title: "pizza"
         },
         {
-            image: require("../../assets/categoriesiamges/juice.png"),
+            image: require("../../assets/categoriesimages/juice.png"),
             text: "Juices",
             title: "juice"
         },
         {
-            image: require("../../assets/categoriesiamges/thai.png"),
+            image: require("../../assets/categoriesimages/thai.png"),
             text: "Thai",
             title: "thai"
         },
         {
-            image: require("../../assets/categoriesiamges/vegan.png"),
+            image: require("../../assets/categoriesimages/vegan.png"),
             text: "Vegan",
             title: "vegan"
         },
         {
-            image: require("../../assets/categoriesiamges/bakery.png"),
+            image: require("../../assets/categoriesimages/bakery.png"),
             text: "Bakery",
             title: "bakery"
         },
         {
-            image: require("../../assets/categoriesiamges/american.png"),
+            image: require("../../assets/categoriesimages/american.png"),
             text: "American",
             title: "american"
         },
         {
-            image: require("../../assets/categoriesiamges/burger.png"),
+            image: require("../../assets/categoriesimages/burger.png"),
             text: "Burger",
             title: "burger"
         }
