@@ -1,5 +1,5 @@
-import { View, Text, Pressable } from "react-native";
 import React from "react";
+import { View, Text, Pressable } from "react-native";
 import Feather from "react-native-vector-icons/Feather";
 import Entypo from "react-native-vector-icons/Entypo";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";

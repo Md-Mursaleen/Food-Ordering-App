@@ -2,7 +2,10 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { Provider as ReduxProvider } from "react-redux";
+import configStore from "../redux/store";
 import HomeScreen from "../screens/HomeScreen";
+import LoginScreen from "../screens/LoginScreen";
 import PickUpScreen from "../screens/PickUpScreen";
 import CheckoutScreen from "../screens/CheckoutScreen";
 import CartItemsScreen from "../screens/CartItemsScreen";
@@ -13,8 +16,6 @@ import SearchScreen from "../screens/SearchScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import ResturantsScreen from "../screens/ResturantsScreen";
 import SearchItemsScreen from "../screens/SearchItemsScreen";
-import { Provider as ReduxProvider } from "react-redux";
-import configStore from "../redux/store";
 import ProfileSettingScreen from "../screens/ProfileSettingScreen";
 import CategoriesScreen from "../screens/CategoriesScreen";
 import CategoriesResturantDetailsScreen from "../screens/CategoriesResturantDetailsScreen";
@@ -25,16 +26,14 @@ import OrderInfoScreen from "../screens/OrderInfoScreen";
 
 const store = configStore();
 const Stack = createNativeStackNavigator();
+
 function RootNavigation() {
     return (
         <ReduxProvider store={store}>
             <NavigationContainer>
-                <GestureHandlerRootView style={
-                    {
-                        flex: 1
-                    }
-                }>
+                <GestureHandlerRootView style={{ flex: 1 }}>
                     <Stack.Navigator screenOptions={{ headerShown: false, contentStyle: { backgroundColor: "white" } }} initialRouteName="Home" >
+                        <Stack.Screen name="Login" component={LoginScreen} />
                         <Stack.Screen name="Home" component={HomeScreen} />
                         <Stack.Screen name="Pickup" component={PickUpScreen} />
                         <Stack.Screen name="Resturants" component={ResturantsScreen} />

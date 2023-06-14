@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 
 function MenuDetails({ menuitems }) {
@@ -17,11 +17,7 @@ function MenuDetails({ menuitems }) {
             onPress={() => navigation.navigate("Menu", {
                 id: menuitems.id
             })}>
-            <View style={
-                {
-                    flex: 1
-                }
-            }>
+            <View style={{ flex: 1 }}>
                 <Text style={
                     {
                         fontSize: 16,
@@ -36,11 +32,7 @@ function MenuDetails({ menuitems }) {
                     }
                 }
                     numberOfLines={2}>{menuitems.description}</Text>
-                <Text style={
-                    {
-                        fontSize: 16
-                    }
-                }>$ {menuitems.price}</Text>
+                <Text style={{ fontSize: 16 }}>$ {menuitems.price}</Text>
             </View>
             {menuitems.image && (<Image source={{
                 uri: menuitems.image

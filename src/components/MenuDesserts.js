@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, Pressable } from "react-native";
 import React from "react";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Image } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 
@@ -49,27 +49,15 @@ export default function MenuDesserts({ desserts, restName, image, address }) {
     );
 }
 const FoodInfo = (props) => (
-    <View style={
-        {
-            width: 230
-        }
-    }>
+    <View style={{ width: 230 }}>
         <Text style={
             style.titleStyle
         }>{props.dessert.title}</Text>
-        <Text style={
-            {
-                marginTop: 5
-            }
-        }>{"\u00A3"}{props.dessert.price}</Text>
+        <Text style={{ marginTop: 5 }}>{"\u00A3"}{props.dessert.price}</Text>
     </View>
 );
 const FoodImage = (props) => (
-    <View style={
-        {
-            marginLeft: 15
-        }
-    }>
+    <View style={{ marginLeft: 15 }}>
         <Image
             source={{
                 uri: props.dessert.image

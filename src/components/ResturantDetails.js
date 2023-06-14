@@ -1,5 +1,5 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import React, { useState, useEffect } from "react";
+import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -46,11 +46,7 @@ export default function ResturantDetails({ cities, discount, closed }) {
                         latitude: resturant.coordinates.latitude,
                         longitude: resturant.coordinates.longitude
                     })}
-                    key={index} style={
-                        {
-                            marginBottom: 5
-                        }
-                    }>
+                    key={index} style={{ marginBottom: 5 }}>
                     <View
                         style={
                             {
@@ -167,22 +163,10 @@ const ResturantInfo = (props) => (
                         }
                     }>({props.truncate(props.address, 15)})</Text>
             </View>
-            <View style={
-                {
-                    flexDirection: "row"
-                }
-            }>
+            <View style={{ flexDirection: "row" }}>
                 <Text
-                    style={
-                        {
-                            color: "grey"
-                        }
-                    }>{"\u00A3"}0.49 Delivery Fee • </Text>
-                <Text style={
-                    {
-                        color: "grey"
-                    }
-                }>30-45 • min</Text>
+                    style={{ color: "grey" }}>{"\u00A3"}0.49 Delivery Fee • </Text>
+                <Text style={{ color: "grey" }}>30-45 • min</Text>
             </View>
         </View>
         <View style={

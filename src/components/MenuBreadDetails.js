@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 const breads = [
@@ -28,11 +28,7 @@ const breads = [
 
 const MenuBreadDetails = () => {
     return (
-        <View style={
-            {
-                marginLeft: 15
-            }
-        }>
+        <View style={{ marginLeft: 15 }}>
             <Text style={
                 {
                     marginTop: 15,
@@ -74,11 +70,7 @@ const MenuBreadDetails = () => {
                             marginBottom: 15
                         }
                     }>
-                        <BouncyCheckbox fillColor="black" size={20} innerIconStyle={
-                            {
-                                borderWidth: 2
-                            }
-                        } />
+                        <BouncyCheckbox fillColor="black" size={20} innerIconStyle={{ borderWidth: 2 }} />
                     </View>
                 </View>
             ))}

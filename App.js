@@ -1,8 +1,9 @@
+import "expo-dev-client";
+import { useEffect } from "react";
 import "react-native-gesture-handler";
-import RootNavigation from "./src/navigation/RootNavigation";
 import { StatusBar, LogBox } from "react-native";
 import * as NavigationBar from "expo-navigation-bar";
-import { useEffect } from "react";
+import RootNavigation from "./src/navigation/RootNavigation";
 
 LogBox.ignoreAllLogs();
 

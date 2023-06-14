@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Image, Text, View, Pressable } from "react-native";
 
 function TopCategoriesRow(props) {
@@ -43,11 +43,7 @@ function TopCategoriesRow(props) {
                         alignItems: "center"
                     }
                 }>
-                    <Text style={
-                        {
-                            fontWeight: "500"
-                        }
-                    }>{props.name1}</Text>
+                    <Text style={{ fontWeight: "500" }}>{props.name1}</Text>
                 </View>
             </Pressable>
             <Pressable style={
@@ -83,11 +79,7 @@ function TopCategoriesRow(props) {
                         alignItems: "center"
                     }
                 }>
-                    <Text style={
-                        {
-                            fontWeight: "500"
-                        }
-                    }>{props.name2}</Text>
+                    <Text style={{ fontWeight: "500" }}>{props.name2}</Text>
                 </View>
             </Pressable>
         </View>

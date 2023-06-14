@@ -4,12 +4,12 @@ import SearchBar from "../components/SearchBar";
 import CategoriesItems from "../components/CategoriesItems";
 import HeaderTabs from "../components/HeaderTabs";
 import ResturantDetails from "../components/ResturantDetails";
-import { MaterialIcons } from "react-native-vector-icons";
 import BottomTabs from "../components/BottomTabs";
 import ResturantDetail from "../components/ResturantDetail";
 import HomeItems from "../components/HomeItems";
 import HomeGroceries from "../components/HomeGroceries";
 import HomeFooter from "../components/HomeFooter";
+import { MaterialIcons } from "react-native-vector-icons";
 
 const chocolates = [
     {

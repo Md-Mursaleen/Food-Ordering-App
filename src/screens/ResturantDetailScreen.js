@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, Image, ScrollView, StatusBar, FlatList, Pressable, StyleSheet } from "react-native";
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
+import firebase from "../../firebase";
+import "firebase/compat/firestore";
+import { useNavigation } from "@react-navigation/native";
+import ResturantDetail from "../components/ResturantDetail";
+import MenuDesserts from "../components/MenuDesserts";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import ButtonTabs from "../components/ButtonTabs";
 import MenuItems from "../components/MenuItems";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import MenuDrinks from "../components/MenuDrinks";
-import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
-import ResturantDetail from "../components/ResturantDetail";
-import Ionicons from "react-native-vector-icons/Ionicons";
-import { useNavigation } from "@react-navigation/native";
-import MenuDesserts from "../components/MenuDesserts";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MenuBreads from "../components/MenuBreads";
 import MenuMeals from "../components/MenuMeals";
 import MenuSides from "../components/MenuSides";
 import MenuSalads from "../components/MenuSalads";
-import firebase from "../../firebase";
-import "firebase/compat/firestore";
 
 const foods = [
     {

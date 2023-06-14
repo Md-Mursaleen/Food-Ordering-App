@@ -4,11 +4,7 @@ import AllCategoriesRow from "./AllCategoriesRow";
 
 function AllCategories() {
     return (
-        <View style={
-            {
-                marginBottom: 165
-            }
-        }>
+        <View style={{ marginBottom: 165 }}>
             <AllCategoriesRow name1="Pizza" title1="pizza" title2="chinese" name2="Chinese" location1="https://images.unsplash.com/photo-1620374645310-f9d97e733268?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" location2="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoaW5lc2UlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
             <AllCategoriesRow name1="Sandwich" title1="sandwich" title2="bakery" name2="Bakery" location1="https://images.unsplash.com/photo-1553909489-cd47e0907980?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FuZHdpY2h8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" location2="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGJha2VyeSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
             <AllCategoriesRow name1="Vegan" title1="vegan" title2="wings" name2="Wings" location1="https://images.unsplash.com/photo-1524859880053-f595797051c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZ2FuJTIwZm9vZHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" location2="https://images.unsplash.com/photo-1605291581998-f646dd126837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGNoaWNrZW4lMjB3aW5ncyUyMGZvb2R8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />

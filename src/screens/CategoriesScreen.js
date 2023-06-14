@@ -1,5 +1,5 @@
-import { View, Text, Pressable, FlatList, ScrollView } from "react-native";
 import React, { useState } from "react";
+import { View, Text, Pressable, FlatList, ScrollView } from "react-native";
 import Feather from "react-native-vector-icons/Feather";
 import { useNavigation } from "@react-navigation/native";
 import SearchBar from "../components/SearchBar";

@@ -1,12 +1,12 @@
-import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { View, Image, Text, ScrollView, StyleSheet, Pressable, TextInput, StatusBar, FlatList } from "react-native";
-import Entypo from "react-native-vector-icons/Entypo";
-import MenuItems from "../components/MenuItems";
-import Ionicons from "react-native-vector-icons/Ionicons";
 import { useDispatch, useSelector } from "react-redux";
 import firebase from "../../firebase";
 import "firebase/compat/firestore";
+import Entypo from "react-native-vector-icons/Entypo";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import MenuItems from "../components/MenuItems";
 import MenuDessertDetails from "../components/MenuDessertDetails";
 import MenuBreadDetails from "../components/MenuBreadDetails";
 import MenuSideDetails from "../components/MenuSideDetails";
@@ -56,7 +56,7 @@ const foods = [
         description: "Served with 2 sides and a bread",
         price: "10.49",
         image: "https://d1ralsognjng37.cloudfront.net/3ab3fbb2-f697-453a-9f1e-99fe045289cd.jpeg"
-    },
+    }
 ];
 
 const frequentlyfoods = [

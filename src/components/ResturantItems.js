@@ -37,11 +37,7 @@ function ResturantItems({ resturant }) {
                             fontWeight: "600"
                         }
                     }>{resturant.name}</Text>
-                    <Text style={
-                        {
-                            color: "grey"
-                        }
-                    } >{resturant.deliveryFee.toFixed(1)} • {resturant.minDeliveryTime}-{resturant.maxDeliveryTime} min</Text>
+                    <Text style={{ color: "grey" }}>{resturant.deliveryFee.toFixed(1)} • {resturant.minDeliveryTime}-{resturant.maxDeliveryTime} min</Text>
                 </View>
                 <View style={
                     {

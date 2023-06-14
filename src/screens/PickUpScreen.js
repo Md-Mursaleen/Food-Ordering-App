@@ -1,15 +1,15 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text } from "react-native";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import BottomSheet, { BottomSheetFlatList } from "@gorhom/bottom-sheet";
+import * as Location from "expo-location";
 import BottomTabs from "../components/BottomTabs";
 import Categories from "../components/Categories";
 import SearchBar from "../components/SearchBar";
 import HeaderTabs from "../components/HeaderTabs";
-import { MaterialIcons } from "react-native-vector-icons";
 import ResturantDetail from "../components/ResturantDetail";
+import { MaterialIcons } from "react-native-vector-icons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import * as Location from "expo-location";
 
 const YELP_API_KEY = "9MpCpziTpWpNEpw1mQszdVERxaJ4qNwWrZXhh3SRtEISnskcjFx1o3fGjn7xDa5ZQleKRaDfTvoULKy0Wen6THwhgSrByNwJAvZspAxyrg-WvH5Kj5_jy8rQZ_erY3Yx";
 

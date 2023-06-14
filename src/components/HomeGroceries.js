@@ -1,15 +1,11 @@
-import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import React from "react";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const HomeGroceries = ({ groceriesData }) => {
     const navigation = useNavigation();
     return (
-        <View style={
-            {
-                marginLeft: 15
-            }
-        }>
+        <View style={{ marginLeft: 15 }}>
             <Pressable
                 onPress={() => navigation.navigate("CategoriesResturant", {
                     name: groceriesData.text,
@@ -29,11 +25,7 @@ const HomeGroceries = ({ groceriesData }) => {
                         borderRadius: 10
                     }
                 }>
-                    <View style={
-                        {
-                            alignItems: "center"
-                        }
-                    }>
+                    <View style={{ alignItems: "center" }}>
                         <Image source={{
                             uri: groceriesData.uri
                         }} style={

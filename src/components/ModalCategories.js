@@ -24,11 +24,7 @@ function ModalCategories(props) {
             }
         }>
             {items[props.item1] && (
-                <Pressable style={
-                    {
-                        alignItems: "center"
-                    }
-                }>
+                <Pressable style={{ alignItems: "center" }}>
                     <View style={
                         {
                             width: 85,

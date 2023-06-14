@@ -1,6 +1,6 @@
-import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 import { Image, Modal, Pressable, StyleSheet, Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import ModalCategories from "./ModalCategories";
 
@@ -131,11 +131,7 @@ function CategoriesItems() {
                     justifyContent: "space-between"
                 }
             }>
-                <View style={
-                    {
-                        alignItems: "center"
-                    }
-                }>
+                <View style={{ alignItems: "center" }}>
                     <Pressable style={
                         {
                             width: 85,

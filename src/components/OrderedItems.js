@@ -53,11 +53,7 @@ function BasketItems({ items }) {
                                             }
                                         }>({truncate(item.resturantAddress, 12)})</Text>
                                     </View>
-                                    <View style={
-                                        {
-                                            marginTop: 8
-                                        }
-                                    }>
+                                    <View style={{ marginTop: 8 }}>
                                         <Text style={
                                             {
                                                 fontSize: 14,

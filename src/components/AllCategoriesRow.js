@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Image, Pressable, Text, View } from "react-native";
 
 function AllCategoriesRow(props) {

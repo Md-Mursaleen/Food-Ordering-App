@@ -1,5 +1,5 @@
+import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import React, { useState } from "react";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 const desserts = [
@@ -27,13 +27,8 @@ const desserts = [
 ];
 
 const MenuDessertDetails = ({ dessertPrice, setDessertPrice }) => {
-    const [checkboxState, setCheckboxState] = useState(false);
     return (
-        <View style={
-            {
-                marginLeft: 15
-            }
-        }>
+        <View style={{ marginLeft: 15 }}>
             <Text style={
                 {
                     marginTop: 15,
@@ -47,22 +42,14 @@ const MenuDessertDetails = ({ dessertPrice, setDessertPrice }) => {
                     key={index} style={
                         [styles.container, dessert.show && { borderBottomColor: "#eee", borderBottomWidth: 1 }]
                     }>
-                    <View style={
-                        {
-                            marginBottom: 10,
-                        }
-                    }>
+                    <View style={{ marginBottom: 10 }}>
                         <Text style={
                             {
                                 fontSize: 16,
                                 fontWeight: "500"
                             }
                         }>{dessert.title}</Text>
-                        <Text style={
-                            {
-                                marginTop: 8
-                            }
-                        }>{"\u00A3"}{dessert.price}</Text>
+                        <Text style={{ marginTop: 8 }}>{"\u00A3"}{dessert.price}</Text>
                         {dessert.selectedText && (
                             <Text style={
                                 {
@@ -85,11 +72,8 @@ const MenuDessertDetails = ({ dessertPrice, setDessertPrice }) => {
                                 borderWidth: 2,
                                 borderRadius: 1.5
                             }
-                        } iconStyle={
-                            {
-                                borderRadius: 1.5
-                            }
-                        } onPress={() => { setDessertPrice(dessert.price) }} />
+                        } iconStyle={{ borderRadius: 1.5 }}
+                            onPress={() => { setDessertPrice(dessert.price) }} />
                     </View>
                 </View>
             ))}

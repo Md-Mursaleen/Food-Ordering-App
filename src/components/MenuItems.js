@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, Pressable } from "react-native";
 import React from "react";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Image } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 
@@ -74,11 +74,7 @@ const FoodInfo = (props) => (
     </View>
 );
 const FoodImage = ({ marginLeft, ...props }) => (
-    <View style={
-        {
-            marginLeft: marginLeft
-        }
-    }>
+    <View style={{ marginLeft: marginLeft }}>
         {props.food.image && (
             <Image
                 source={{

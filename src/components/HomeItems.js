@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { View, Text, Image, Pressable } from "react-native";
 
 function HomeItems({ items, marginBottom, restName, image, address, notfood, groceries }) {
@@ -53,11 +53,7 @@ function HomeItems({ items, marginBottom, restName, image, address, notfood, gro
                         }
                     }>{truncate(items.text, 36)}</Text>
                 </View>
-                <View style={
-                    {
-                        marginTop: 3
-                    }
-                }>
+                <View style={{ marginTop: 3 }}>
                     <Text>{"\u00A3"}{items.price}</Text>
                 </View>
             </View>

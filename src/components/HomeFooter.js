@@ -1,20 +1,12 @@
-import { View, Text, Pressable } from "react-native";
 import React from "react";
+import { View, Text, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const HomeFooter = () => {
     const navigation = useNavigation();
     return (
-        <View style={
-            {
-                marginTop: 15
-            }
-        }>
-            <View style={
-                {
-                    alignItems: "center"
-                }
-            }>
+        <View style={{ marginTop: 15 }}>
+            <View style={{ alignItems: "center" }}>
                 <Pressable style={
                     {
                         width: "92%",

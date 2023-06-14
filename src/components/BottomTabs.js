@@ -1,5 +1,5 @@
-import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import { useNavigation } from "@react-navigation/native";
 
@@ -22,11 +22,7 @@ export default function BottomTabs() {
     );
 }
 const Icon = (props) => (
-    <View style={
-        {
-            alignItems: "center"
-        }
-    }>
+    <View style={{ alignItems: "center" }}>
         <FontAwesome5
             name={props.icon}
             size={22}

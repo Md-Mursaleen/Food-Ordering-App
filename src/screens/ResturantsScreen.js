@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FlatList, Pressable, ScrollView, Text, View } from "react-native";
-import Categories from "../components/Categories";
 import Feather from "react-native-vector-icons/Feather";
 import { useNavigation } from "@react-navigation/native";
 import ResturantDetails from "../components/ResturantDetails";
 import BottomTabs from "../components/BottomTabs";
 import ResturantDetail from "../components/ResturantDetail";
+import Categories from "../components/Categories";
 import HomeFooter from "../components/HomeFooter";
 
 const items = [

@@ -1,5 +1,5 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
+import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -132,24 +132,11 @@ const ResturantInfo = (props) => (
                         }
                     }>({props.truncate(props.address, 15)})</Text>
             </View>
-            <View style={
-                {
-                    flexDirection: "row"
-                }
-            }>
+            <View style={{ flexDirection: "row" }}>
                 <Text
-                    style={
-                        {
-                            color: "gray"
-                        }
-                    }>{"\u00A3"}0.49 Delivery Fee • </Text>
+                    style={{ color: "gray" }}>{"\u00A3"}0.49 Delivery Fee • </Text>
                 {props.isList === "false" && (
-                    <Text
-                        style={
-                            {
-                                color: "gray"
-                            }
-                        }>30-45 • min</Text>
+                    <Text style={{ color: "gray" }}>30-45 • min</Text>
                 )}
             </View>
         </View>

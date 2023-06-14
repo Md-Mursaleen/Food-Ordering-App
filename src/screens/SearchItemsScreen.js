@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, Pressable, ScrollView, Image } from "react-native";
-import BottomTabs from "../components/BottomTabs";
 import Feather from "react-native-vector-icons/Feather";
 import { useNavigation } from "@react-navigation/native";
+import BottomTabs from "../components/BottomTabs";
 import CategoriesResturants from "../components/CategoriesResturants";
 
 const items = {
