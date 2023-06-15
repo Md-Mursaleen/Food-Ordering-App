@@ -413,7 +413,7 @@ const groceries = [
     }
 ];
 
-const YELP_API_KEY = "9MpCpziTpWpNEpw1mQszdVERxaJ4qNwWrZXhh3SRtEISnskcjFx1o3fGjn7xDa5ZQleKRaDfTvoULKy0Wen6THwhgSrByNwJAvZspAxyrg-WvH5Kj5_jy8rQZ_erY3Yx";
+const YELP_API_KEY = "";
 
 function HomeScreen() {
     const [activeTab, setActiveTab] = useState("Delivery");
